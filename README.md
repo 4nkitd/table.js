@@ -1,9 +1,8 @@
 # dynamic-table
 js lib to add search and pagination to tables
 
-/*****************************************************
- * usage                                             *
- *****************************************************
+# Usage
+
  * config : {
  *     get_rows : function used to select rows to do pagination on
  *         If no function is provided, checks for a config.table element and looks for rows in there to page
