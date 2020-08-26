@@ -67,6 +67,7 @@ class Table {
         }
         box = config.box;
 
+        
         // get/make function for getting table's rows
         if (typeof config.get_rows != "function") {
             config.get_rows = function () {
@@ -90,6 +91,13 @@ class Table {
         }
         var get_rows = config.get_rows;
         var trs = get_rows();
+
+        if (trs.length == 0) {
+            let table = config.table;
+            var row = table.insertRow(0);
+            var cell1 = row.insertCell(0);
+            cell1.innerHTML = "No Chat Available";
+        }
 
         // get/set rows per page
         if (typeof config.rows_per_page == "undefined") {
