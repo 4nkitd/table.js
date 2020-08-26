@@ -96,7 +96,7 @@ class Table {
             let table = config.table;
             var row = table.insertRow(0);
             var cell1 = row.insertCell(0);
-            cell1.innerHTML = "No Chat Available";
+            cell1.innerHTML = "No Data Available";
         }
 
         // get/set rows per page
